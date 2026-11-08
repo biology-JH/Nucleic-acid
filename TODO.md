@@ -11,3 +11,4 @@
 - [x] **Preserve the specified left panel beside the lesson.** Keep the left-side panel beside the blog/lesson content and organize its choices under `START HERE` (Starter; 12 key terms; Beautiful · What · Why · How; Chronology), `SL + HL · A1.2.1–A1.2.10` (all ten named points), `HL · A1.2.11–A1.2.15`, and `WATCH & REVIEW` (PowerPoint videos; Plenary).
 - [x] **Enlarge and integrate the videos.** Make each video about four times larger than its current display and place Visualising DNA Geometry within A1.2.12 and the Hershey–Chase video within A1.2.14. Do not leave a separate video section at the end.
 - [x] **Remove picture-source credits.** Remove the source/credit labels for all pictures without deleting the pictures or useful explanatory captions.
+- [x] **Bust old published asset caches.** Add a version query string to the stylesheet and lesson script URLs so browsers with the old 90-day cache retrieve the current files.
