@@ -341,3 +341,137 @@ p { margin: 0 0 1rem; }
   .hero-copy { width: calc(100% - 2rem); padding-block: 2rem; }
   .lesson-video { padding: .4rem; }
 }
+
+
+/* Hero text overlays the photo directly; no color wash sits over the image. */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  align-items: stretch;
+  height: clamp(600px, 54vw, 740px);
+  min-height: 600px;
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+  color: #fffdf5;
+  background: transparent;
+}
+.hero::before,
+.hero::after { content: none; display: none; }
+.hero-art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.hero-art img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center 52%;
+  box-shadow: none;
+}
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  grid-area: 1 / 1;
+  align-self: center;
+  justify-self: start;
+  width: min(1320px, calc(100% - 3rem));
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-block: clamp(1.5rem, 3vw, 3rem);
+  color: #fffdf5;
+  text-shadow: 0 2px 6px rgba(3, 12, 23, .96), 0 0 2px rgba(3, 12, 23, .88);
+}
+.hero .eyebrow { color: #fffdf5; }
+.hero h1 { max-width: 760px; font-size: clamp(3.5rem, 7vw, 7rem); }
+.hero h1 span { color: var(--teal-light); }
+.hero-lede { max-width: 760px; color: #fffdf5; font-size: clamp(1.2rem, 2.1vw, 1.8rem); }
+.hero-meta span { border-color: rgba(255, 255, 255, .85); color: #fffdf5; background: transparent; }
+.hero-link { color: #fffdf5; }
+.hero-link span { color: var(--gold); }
+.hero-art figcaption,
+.hero-ribbon { display: none; }
+
+/* Beautiful is a horizontal feature; the WHAT / WHY / HOW cards form one row. */
+.lens-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+.lens-beautiful {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  column-gap: clamp(1rem, 3vw, 3rem);
+  min-height: 0;
+}
+.lens-beautiful .lens-label { grid-column: 1; grid-row: 1; }
+.lens-beautiful h2 {
+  grid-column: 1;
+  grid-row: 2;
+  margin: .35rem 0 .5rem;
+  font-size: clamp(2rem, 3.7vw, 3.25rem);
+}
+.lens-beautiful p:last-child {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: center;
+  max-width: 42ch;
+  margin: 0;
+  font-size: clamp(1.3rem, 1.8vw, 1.6rem);
+  line-height: 1.4;
+}
+.lens-card:not(.lens-beautiful) {
+  display: flex;
+  min-height: 280px;
+  flex-direction: column;
+}
+.lens-card:not(.lens-beautiful) h2 { font-size: clamp(1.5rem, 2.1vw, 2.1rem); }
+
+/* Selected diagrams span the lesson card and are capped at their source resolution. */
+.point-visual-wide {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: min(100%, var(--figure-max-width, 1200px));
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.point-visual-wide img {
+  width: 100%;
+  max-width: 100%;
+  max-height: none;
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .hero { height: 760px; min-height: 760px; }
+  .hero-art img { object-position: 48% center; }
+  .hero-copy { width: calc(100% - 2rem); padding-block: 1.4rem; }
+  .hero h1 { font-size: clamp(3.2rem, 13vw, 4.4rem); }
+  .hero-lede { font-size: 24px; }
+  .hero-meta { gap: .45rem; }
+  .hero-meta span { min-height: 48px; }
+  .lens-grid { grid-template-columns: minmax(0, 1fr); }
+  .lens-beautiful {
+    grid-column: 1;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .35rem;
+  }
+  .lens-beautiful .lens-label,
+  .lens-beautiful h2,
+  .lens-beautiful p:last-child { grid-column: 1; grid-row: auto; }
+  .lens-beautiful p:last-child { max-width: none; }
+  .lens-card:not(.lens-beautiful) { min-height: auto; }
+}

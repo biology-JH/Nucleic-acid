@@ -12,7 +12,7 @@ const points = [
     id: "A1.2.2", level: "SL + HL", title: "Components of a nucleotide",
     syllabus: "A nucleotide contains a phosphate group, a pentose sugar and a nitrogenous base.",
     explanation: "Nucleotides are the monomers of nucleic acids. In a simple diagram, show phosphate as a circle, sugar as a pentagon and base as a rectangle.",
-    image: { src: "/public/images/nucleotide.png", alt: "Nucleotide parts connected in a nucleic-acid strand", caption: "A nucleotide’s three parts: phosphate, pentose sugar and base." },
+    image: { wide: true, maxWidth: 1200, src: "/public/images/nucleotide.png", alt: "Nucleotide parts connected in a nucleic-acid strand", caption: "A nucleotide’s three parts: phosphate, pentose sugar and base." },
     questions: [
       { q: "Which set lists the three components of a nucleotide?", options: ["Phosphate, pentose sugar and nitrogenous base.", "Glycerol, fatty acid and base.", "Amino acid, phosphate and ribose only.", "Glucose, lipid and nitrogenous base."] },
       { q: "In the syllabus diagram convention, what shape represents the sugar?", options: ["A circle.", "A rectangle.", "A pentagon.", "A triangle."] }
@@ -31,7 +31,7 @@ const points = [
     id: "A1.2.4", level: "SL + HL", title: "Bases: the molecular code",
     syllabus: "The bases in each nucleic acid form the basis of a code.",
     explanation: "DNA uses adenine (A), thymine (T), cytosine (C) and guanine (G). RNA uses uracil (U) instead of thymine. The order of bases carries information.",
-    image: { src: "/public/images/bases.png", alt: "Chemical structures of the four nitrogenous bases", caption: "The base sequence carries information; RNA uses U where DNA uses T." },
+    image: { wide: true, maxWidth: 734, src: "/public/images/bases.png", alt: "Chemical structures of the four nitrogenous bases", caption: "The base sequence carries information; RNA uses U where DNA uses T." },
     questions: [
       { q: "Which base is found in RNA instead of thymine?", options: ["Guanine.", "Cytosine.", "Uracil.", "Adenine."] },
       { q: "How does a nucleic acid sequence carry information?", options: ["By the order of its bases.", "By the colour of its sugar.", "By changing its phosphate count at every gene.", "By the number of membranes around it."] }
@@ -60,7 +60,7 @@ const points = [
     id: "A1.2.7", level: "SL + HL", title: "DNA and RNA compared",
     syllabus: "Compare DNA and RNA by strand number, nitrogenous bases and pentose sugar.",
     explanation: "DNA is usually double-stranded, contains deoxyribose and uses A, T, C and G. RNA is usually single-stranded, contains ribose and uses A, U, C and G. Be able to sketch the difference between ribose and deoxyribose. Examples of RNA include mRNA, tRNA and rRNA.",
-    image: { src: "/public/images/dna-rna.png", alt: "Structural comparison of DNA and RNA strands", caption: "A quick structural comparison of DNA and RNA." },
+    image: { wide: true, maxWidth: 734, src: "/public/images/dna-rna.png", alt: "Structural comparison of DNA and RNA strands", caption: "A quick structural comparison of DNA and RNA." },
     questions: [
       { q: "Which comparison of DNA and RNA is correct?", options: ["DNA has ribose and U; RNA has deoxyribose and T.", "DNA usually has two strands and T; RNA usually has one strand and U.", "Both always have two strands and T.", "Both use U and contain identical sugars."] },
       { q: "What differs at the 2′ carbon of ribose and deoxyribose?", options: ["Ribose has –OH; deoxyribose has –H.", "Ribose has –H; deoxyribose has –OH.", "Both have an extra phosphate there.", "Neither sugar has a 2′ carbon."] }
@@ -70,7 +70,7 @@ const points = [
     id: "A1.2.8", level: "SL + HL", title: "Complementarity copies and expresses information",
     syllabus: "Complementary base pairing allows genetic information to be replicated and expressed.",
     explanation: "During DNA replication, each strand can guide a complementary new strand. During transcription, DNA base pairing guides RNA assembly. During translation, matching between mRNA codons and tRNA anticodons helps deliver amino acids in sequence.",
-    image: { src: "/public/images/replication-expression.png", alt: "Base pairing during replication and gene expression", caption: "Base pairing connects stored DNA information to new nucleic-acid strands." },
+    image: { wide: true, maxWidth: 670, src: "/public/images/replication-expression.png", alt: "Base pairing during replication and gene expression", caption: "Base pairing connects stored DNA information to new nucleic-acid strands." },
     questions: [
       { q: "How does complementary pairing help copy DNA?", options: ["Each original strand guides a matching new strand.", "It changes DNA into protein directly.", "It removes all bases from the template.", "It prevents new nucleotides from joining."] },
       { q: "Where does complementary matching contribute to gene expression?", options: ["Only during lipid synthesis.", "During transcription and codon–anticodon matching in translation.", "Only when DNA is packaged into nucleosomes.", "It has no role in expression."] }
@@ -98,7 +98,7 @@ const points = [
     id: "A1.2.11", level: "HL", title: "Directionality of DNA and RNA",
     syllabus: "DNA and RNA have 5′→3′ linkages and directionality that matters in replication, transcription and translation.",
     explanation: "A strand has a 5′ end and a 3′ end, giving it direction. Nucleic acids are synthesized 5′→3′ as new nucleotides join at the 3′ end. This affects how DNA is replicated, how RNA is transcribed and how mRNA is read in translation.",
-    image: { src: "/public/images/directionality.png", alt: "Two nucleic-acid strands with opposite 5′ and 3′ orientations", caption: "The 5′ and 3′ ends define each strand’s orientation." },
+    image: { wide: true, maxWidth: 670, src: "/public/images/directionality.png", alt: "Two nucleic-acid strands with opposite 5′ and 3′ orientations", caption: "The 5′ and 3′ ends define each strand’s orientation." },
     questions: [
       { q: "In which direction is a new DNA or RNA strand synthesized?", options: ["3′→5′ by addition at the 5′ end.", "5′→3′ by addition at the 3′ end.", "In both directions equally from every end.", "Direction has no relation to strand growth."] },
       { q: "Why does nucleic-acid directionality matter?", options: ["It determines orientation in replication, transcription and translation.", "It changes the identity of every base.", "It replaces hydrogen bonds with peptide bonds.", "It determines only the molecule’s colour."] }
@@ -161,8 +161,10 @@ function renderQuestion(question, pointId, qIndex) {
 }
 
 function renderPoint(point) {
+  const imageClasses = point.image?.wide ? "point-visual point-visual-wide" : "point-visual";
+  const figureStyle = point.image?.wide ? ` style="--figure-max-width:${point.image.maxWidth || 1200}px"` : "";
   const image = point.image
-    ? `<figure class="point-visual"><img src="${point.image.src}" alt="${point.image.alt}" loading="lazy" /><figcaption>${point.image.caption}</figcaption></figure>`
+    ? `<figure class="${imageClasses}"${figureStyle}><img src="${point.image.src}" alt="${point.image.alt}" loading="lazy" /><figcaption>${point.image.caption}</figcaption></figure>`
     : "";
   const questions = point.questions.map((item, qIndex) => renderQuestion(item, point.id, qIndex)).join("");
   const video = point.video
