@@ -12,6 +12,10 @@
   <body>
     <a class="skip-link" href="#main">Skip to lesson</a>
     <header class="hero" id="top">
+      <figure class="hero-art">
+        <img src="/manus-storage/pic-002_0a7d2b88.jpg" data-fallback="/public/images/header-pdf-second.jpg" onerror="this.onerror=null;this.src=this.dataset.fallback" alt="The second picture from the attached PDF: a DNA model in a modern laboratory." />
+        <figcaption>Header image · second picture from the supplied PDF</figcaption>
+      </figure>
       <div class="hero-copy">
         <p class="eyebrow">IB BIOLOGY · 2025 GUIDE · A1.2</p>
         <h1>The code<br /><span>within.</span></h1>
@@ -23,105 +27,154 @@
         </div>
         <a class="hero-link" href="#starter">Begin with a question <span aria-hidden="true">↓</span></a>
       </div>
-      <figure class="hero-art">
-        <img src="/public/images/hero-dna.png" alt="Dramatic deep-sea image from the supplied PowerPoint, used as a visual invitation to explore the origins of genetic information." />
-        <figcaption>From life’s beginnings to the code shared across living things</figcaption>
-      </figure>
       <div class="hero-ribbon" aria-hidden="true"><span>A</span><span>T</span><span>G</span><span>C</span></div>
     </header>
 
-    <nav class="lesson-nav" aria-label="Lesson navigation">
-      <a href="#starter">Starter</a>
-      <a href="#key-terms">12 key terms</a>
-      <a href="#sequence">Syllabus sequence</a>
-      <a href="#plenary">Plenary</a>
-    </nav>
-
-    <main id="main">
-      <section class="starter-section section-wrap" id="starter">
-        <div class="section-kicker"><span class="step-dot">01</span><span>STARTER · THINK FIRST</span></div>
-        <div class="starter-grid">
-          <div>
-            <h2>Where is life coded?</h2>
-            <p class="starter-prompt">Every living cell uses DNA, yet some viruses carry RNA instead. Could RNA have come before DNA?</p>
+    <main id="main" class="site-layout">
+      <details class="side-panel" open>
+        <summary>Choose content</summary>
+        <nav class="side-links" aria-label="Lesson content chooser">
+          <div class="side-group">
+            <p class="side-label">START HERE</p>
+            <a href="#starter">Starter</a>
+            <a href="#key-terms">12 key terms</a>
+            <a href="#framing">Beautiful · What · Why · How</a>
+            <a href="#timeline">Chronology</a>
           </div>
-          <div class="starter-questions">
-            <p><strong>1.</strong> What makes DNA suitable for passing information from one generation to the next?</p>
-            <p><strong>2.</strong> Do RNA viruses challenge the idea that DNA is the genetic material of living organisms? Explain your first thought.</p>
+          <details class="side-group" open>
+            <summary>SL + HL · A1.2.1–A1.2.10</summary>
+            <a href="#a1-2-1">A1.2.1 · Genetic material</a>
+            <a href="#a1-2-2">A1.2.2 · Nucleotides</a>
+            <a href="#a1-2-3">A1.2.3 · Backbone</a>
+            <a href="#a1-2-4">A1.2.4 · Base code</a>
+            <a href="#a1-2-5">A1.2.5 · RNA polymer</a>
+            <a href="#a1-2-6">A1.2.6 · DNA strands</a>
+            <a href="#a1-2-7">A1.2.7 · DNA vs RNA</a>
+            <a href="#a1-2-8">A1.2.8 · Complementarity</a>
+            <a href="#a1-2-9">A1.2.9 · Sequence capacity</a>
+            <a href="#a1-2-10">A1.2.10 · Common ancestry</a>
+          </details>
+          <details class="side-group">
+            <summary>HL · A1.2.11–A1.2.15</summary>
+            <a href="#a1-2-11">A1.2.11 · Directionality</a>
+            <a href="#a1-2-12">A1.2.12 · Base pairing</a>
+            <a href="#a1-2-13">A1.2.13 · Nucleosomes</a>
+            <a href="#a1-2-14">A1.2.14 · Hershey–Chase</a>
+            <a href="#a1-2-15">A1.2.15 · Chargaff</a>
+          </details>
+          <div class="side-group">
+            <p class="side-label">WATCH & REVIEW</p>
+            <a href="#video-blog">PowerPoint videos</a>
+            <a href="#plenary">Plenary</a>
           </div>
-        </div>
-      </section>
+        </nav>
+      </details>
 
-      <section class="terms-section section-wrap" id="key-terms" aria-labelledby="terms-title">
-        <div class="section-kicker"><span class="step-dot">02</span><span>YOUR WORD BANK</span></div>
-        <h2 id="terms-title">12 key terms</h2>
-        <p class="section-intro">English terms with Traditional Chinese translations.</p>
-        <p class="table-scroll-hint">On small screens, swipe sideways to see all four columns.</p>
-        <div class="table-scroll" role="region" aria-label="Twelve English biology terms and their Traditional Chinese translations" tabindex="0">
-          <table class="terms-table">
-            <thead><tr><th scope="col">Keyword</th><th scope="col">中文（繁體）</th><th scope="col">Keyword</th><th scope="col">中文（繁體）</th></tr></thead>
-            <tbody>
-              <tr><td>Nucleotide</td><td lang="zh-Hant">核苷酸</td><td>Phosphodiester bond</td><td lang="zh-Hant">磷酸二酯鍵</td></tr>
-              <tr><td>Sugar–phosphate backbone</td><td lang="zh-Hant">糖－磷酸骨架</td><td>Antiparallel</td><td lang="zh-Hant">反向平行</td></tr>
-              <tr><td>Complementary base pairing</td><td lang="zh-Hant">互補鹼基配對</td><td>Condensation reaction</td><td lang="zh-Hant">縮合反應</td></tr>
-              <tr><td>Directionality</td><td lang="zh-Hant">方向性</td><td>Purine</td><td lang="zh-Hant">嘌呤</td></tr>
-              <tr><td>Pyrimidine</td><td lang="zh-Hant">嘧啶</td><td>Nucleosome</td><td lang="zh-Hant">核小體</td></tr>
-              <tr><td>Histone</td><td lang="zh-Hant">組蛋白</td><td>Falsification</td><td lang="zh-Hant">科學否證</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div class="lesson-content">
+        <section class="starter-section section-wrap" id="starter">
+          <div class="section-kicker"><span class="step-dot">01</span><span>STARTER · THINK FIRST</span></div>
+          <div class="starter-grid">
+            <div>
+              <h2>Where is life coded?</h2>
+              <p class="starter-prompt">Every living cell uses DNA, yet some viruses carry RNA instead. Could RNA have come before DNA?</p>
+            </div>
+            <div class="starter-questions">
+              <p><strong>1.</strong> What makes DNA suitable for passing information from one generation to the next?</p>
+              <p><strong>2.</strong> Do RNA viruses challenge the idea that DNA is the genetic material of living organisms? Explain your first thought.</p>
+            </div>
+          </div>
+        </section>
 
-      <section class="lens-section section-wrap" aria-label="Beautiful, What, Why, and How">
-        <div class="section-kicker"><span class="step-dot">03</span><span>FOUR WAYS INTO THE TOPIC</span></div>
-        <div class="lens-grid">
-          <article class="lens-card lens-beautiful"><p class="lens-label">BEAUTIFUL</p><h2>A tiny alphabet.<br />A living world.</h2><p>Four DNA bases can carry an extraordinary range of inherited information.</p></article>
-          <article class="lens-card"><p class="lens-label">WHAT</p><h2>Build the molecule</h2><p>Follow nucleotides, sugars, bases, bonds and the structures of DNA and RNA.</p></article>
-          <article class="lens-card"><p class="lens-label">WHY</p><h2>Keep information</h2><p>See how pairing supports copying, expression and evidence of shared ancestry.</p></article>
-          <article class="lens-card"><p class="lens-label">HOW</p><h2>Read the evidence</h2><p>Model structures, compare data and test scientific explanations.</p></article>
-        </div>
-      </section>
+        <section class="terms-section section-wrap" id="key-terms" aria-labelledby="terms-title">
+          <div class="section-kicker"><span class="step-dot">02</span><span>YOUR WORD BANK</span></div>
+          <h2 id="terms-title">12 key terms</h2>
+          <p class="section-intro">English terms with Traditional Chinese translations.</p>
+          <p class="table-scroll-hint">On small screens, swipe sideways to see all four columns.</p>
+          <div class="table-scroll" role="region" aria-label="Twelve English biology terms and their Traditional Chinese translations" tabindex="0">
+            <table class="terms-table">
+              <thead><tr><th scope="col">Keyword</th><th scope="col">中文（繁體）</th><th scope="col">Keyword</th><th scope="col">中文（繁體）</th></tr></thead>
+              <tbody>
+                <tr><td>Nucleotide</td><td lang="zh-Hant">核苷酸</td><td>Phosphodiester bond</td><td lang="zh-Hant">磷酸二酯鍵</td></tr>
+                <tr><td>Sugar–phosphate backbone</td><td lang="zh-Hant">糖－磷酸骨架</td><td>Antiparallel</td><td lang="zh-Hant">反向平行</td></tr>
+                <tr><td>Complementary base pairing</td><td lang="zh-Hant">互補鹼基配對</td><td>Condensation reaction</td><td lang="zh-Hant">縮合反應</td></tr>
+                <tr><td>Directionality</td><td lang="zh-Hant">方向性</td><td>Purine</td><td lang="zh-Hant">嘌呤</td></tr>
+                <tr><td>Pyrimidine</td><td lang="zh-Hant">嘧啶</td><td>Nucleosome</td><td lang="zh-Hant">核小體</td></tr>
+                <tr><td>Histone</td><td lang="zh-Hant">組蛋白</td><td>Falsification</td><td lang="zh-Hant">科學否證</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-      <section class="timeline-section section-wrap" aria-label="Chronological history of evidence about DNA">
-        <p class="section-kicker"><span class="step-dot">04</span><span>HISTORY IN TIME · LESSONS IN SYLLABUS ORDER</span></p>
-        <div class="timeline">
-          <article><p class="timeline-date">1909</p><p>Levene proposes a repeating four-base DNA structure: the tetranucleotide hypothesis.</p></article>
-          <article><p class="timeline-date">1948–1950</p><p>Chargaff’s measurements show that DNA base composition varies among species.</p></article>
-          <article><p class="timeline-date">1952</p><p>Hershey and Chase use radioisotopes to test whether DNA or protein enters bacterial cells.</p></article>
-        </div>
-      </section>
+        <section class="lens-section section-wrap" id="framing" aria-label="Beautiful, What, Why, and How">
+          <div class="section-kicker"><span class="step-dot">03</span><span>FOUR WAYS INTO THE TOPIC</span></div>
+          <div class="lens-grid">
+            <article class="lens-card lens-beautiful"><p class="lens-label">BEAUTIFUL</p><h2>A tiny alphabet.<br />A living world.</h2><p>Four DNA bases can carry an extraordinary range of inherited information.</p></article>
+            <article class="lens-card"><p class="lens-label">WHAT</p><h2>Build the molecule</h2><p>Follow nucleotides, sugars, bases, bonds and the structures of DNA and RNA.</p></article>
+            <article class="lens-card"><p class="lens-label">WHY</p><h2>Keep information</h2><p>See how pairing supports copying, expression and evidence of shared ancestry.</p></article>
+            <article class="lens-card"><p class="lens-label">HOW</p><h2>Read the evidence</h2><p>Model structures, compare data and test scientific explanations.</p></article>
+          </div>
+        </section>
 
-      <section class="sequence-section" id="sequence">
-        <div class="sequence-heading section-wrap">
-          <div class="section-kicker"><span class="step-dot">05</span><span>THE 2025 IB BIOLOGY SYLLABUS</span></div>
-          <h2>From molecular parts<br />to scientific evidence.</h2>
-          <p>Follow A1.2.1 to A1.2.15 in the syllabus sequence. The first ten points are shared by SL and HL; the final five are HL-only.</p>
-          <div class="level-legend"><span class="level-badge shared">SL + HL</span><span class="level-badge hl">HL</span></div>
-        </div>
-        <div class="core-band"><div class="section-wrap"><p class="band-number">A1.2.1—A1.2.10</p><h2>Shared core · SL + HL</h2><p>What nucleic acids are, how they are built, and why their code matters.</p></div></div>
-        <div id="core-points" class="points-list section-wrap" aria-live="polite"></div>
-        <div class="hl-band"><div class="section-wrap"><p class="band-number">A1.2.11—A1.2.15</p><h2>Additional higher level · HL</h2><p>Direction, stability, packaging and the experiments behind the evidence.</p></div></div>
-        <div id="hl-points" class="points-list section-wrap" aria-live="polite"></div>
-      </section>
+        <section class="timeline-section section-wrap" id="timeline" aria-label="Chronological history of evidence about DNA">
+          <p class="section-kicker"><span class="step-dot">04</span><span>HISTORY IN TIME · LESSONS IN SYLLABUS ORDER</span></p>
+          <div class="timeline">
+            <article><p class="timeline-date">1909</p><p>Levene proposes a repeating four-base DNA structure: the tetranucleotide hypothesis.</p></article>
+            <article><p class="timeline-date">1948–1950</p><p>Chargaff’s measurements show that DNA base composition varies among species.</p></article>
+            <article><p class="timeline-date">1952</p><p>Hershey and Chase use radioisotopes to test whether DNA or protein enters bacterial cells.</p></article>
+          </div>
+        </section>
 
-      <section class="plenary-section section-wrap" id="plenary">
-        <div class="section-kicker"><span class="step-dot">06</span><span>PLENARY · CONNECT THE IDEAS</span></div>
-        <div class="plenary-heading"><h2>Structure. Evidence.<br /><span>Inheritance.</span></h2><p>Use evidence from more than one point to explain what DNA can do.</p></div>
-        <div class="plenary-questions">
-          <article><span>01</span><p>How do complementary base pairing and 5′→3′ directionality help preserve information during replication?</p></article>
-          <article><span>02</span><p>What did Hershey–Chase show, and how did Chargaff’s data change ideas about DNA?</p></article>
-          <article><span>03</span><p>Why does a nearly universal genetic code support common ancestry?</p></article>
-        </div>
-        <p class="exit-ticket">Exit ticket: explain one structure–function link and one piece of evidence in your own words.</p>
-      </section>
+        <section class="sequence-section" id="sequence">
+          <div class="sequence-heading section-wrap">
+            <div class="section-kicker"><span class="step-dot">05</span><span>THE 2025 IB BIOLOGY SYLLABUS</span></div>
+            <h2>From molecular parts<br />to scientific evidence.</h2>
+            <p>Follow A1.2.1 to A1.2.15 in the syllabus sequence. The first ten points are shared by SL and HL; the final five are HL-only.</p>
+            <div class="level-legend"><span class="level-badge shared">SL + HL</span><span class="level-badge hl">HL</span></div>
+          </div>
+          <div class="core-band"><div class="section-wrap"><p class="band-number">A1.2.1—A1.2.10</p><h2>Shared core · SL + HL</h2><p>What nucleic acids are, how they are built, and why their code matters.</p></div></div>
+          <div id="core-points" class="points-list section-wrap"></div>
+          <div class="hl-band"><div class="section-wrap"><p class="band-number">A1.2.11—A1.2.15</p><h2>Additional higher level · HL</h2><p>Direction, stability, packaging and the experiments behind the evidence.</p></div></div>
+          <div id="hl-points" class="points-list section-wrap"></div>
+        </section>
+
+        <section class="video-blog section-wrap" id="video-blog" aria-labelledby="video-title">
+          <div class="section-kicker"><span class="step-dot">06</span><span>VIDEO BLOG · FROM THE POWERPOINT</span></div>
+          <h2 id="video-title">Watch the molecules and the evidence.</h2>
+          <div class="video-grid">
+            <article class="video-card">
+              <h3>Visualising DNA Geometry</h3>
+              <p>PowerPoint slide 25 · A1.2.12 · Explore antiparallel strands, grooves and helix width.</p>
+              <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/TrNeuH6JOVc" title="Visualising DNA Geometry — PowerPoint slide 25" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <a href="https://www.youtube.com/watch?v=TrNeuH6JOVc" target="_blank" rel="noreferrer">Watch on YouTube</a>
+            </article>
+            <article class="video-card">
+              <h3>Watch: The Hershey–Chase Experiment</h3>
+              <p>PowerPoint slide 33 · A1.2.14 · Track how radioisotopes tested DNA versus protein.</p>
+              <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/tSHevjh123A" title="The Hershey–Chase Experiment — PowerPoint slide 33" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <a href="https://www.youtube.com/watch?v=tSHevjh123A" target="_blank" rel="noreferrer">Watch on YouTube</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="plenary-section section-wrap" id="plenary">
+          <div class="section-kicker"><span class="step-dot">07</span><span>PLENARY · CONNECT THE IDEAS</span></div>
+          <div class="plenary-heading"><h2>Structure. Evidence.<br /><span>Inheritance.</span></h2><p>Use evidence from more than one point to explain what DNA can do.</p></div>
+          <div class="plenary-questions">
+            <article><span>01</span><p>How do complementary base pairing and 5′→3′ directionality help preserve information during replication?</p></article>
+            <article><span>02</span><p>What did Hershey–Chase show, and how did Chargaff’s data change ideas about DNA?</p></article>
+            <article><span>03</span><p>Why does a nearly universal genetic code support common ancestry?</p></article>
+          </div>
+          <p class="exit-ticket">Exit ticket: explain one structure–function link and one piece of evidence in your own words.</p>
+        </section>
+
+        <footer class="site-footer">
+          <p class="footer-title">A1.2 · The code within</p>
+          <p>Content checked against the IB Biology Guide, first assessment 2025, A1.2 syllabus pages 35–37. Lesson point order and SL/HL status follow the guide.</p>
+          <p><a href="https://anatolia.edu.gr/images/highschool/IBDP/Biology%20Guide%202025.pdf" target="_blank" rel="noreferrer">Open the 2025 IB Biology Guide</a> · <a href="https://www.biologyforlife.com/nucleicacids.html" target="_blank" rel="noreferrer">A1.2 cross-check resource</a></p>
+          <p>History: <a href="https://www.jbc.org/article/S0021-9258%2820%2961522-8/fulltext" target="_blank" rel="noreferrer">Chargaff’s research (JBC)</a> · <a href="https://www.genome.gov/25520254/online-education-kit-1952-genes-are-made-of-dna" target="_blank" rel="noreferrer">Hershey–Chase, 1952 (NHGRI)</a></p>
+          <p>Lesson diagrams: supplied PowerPoint, A1.2 Nucleic Acids. Header: second picture from the supplied PDF.</p>
+        </footer>
+      </div>
     </main>
-
-    <footer class="site-footer">
-      <p class="footer-title">A1.2 · The code within</p>
-      <p>Content checked against the IB Biology Guide, first assessment 2025, A1.2 syllabus pages 35–37. Lesson point order and SL/HL status follow the guide.</p>
-      <p><a href="https://anatolia.edu.gr/images/highschool/IBDP/Biology%20Guide%202025.pdf" target="_blank" rel="noreferrer">Open the 2025 IB Biology Guide</a> · <a href="https://www.biologyforlife.com/nucleicacids.html" target="_blank" rel="noreferrer">A1.2 cross-check resource</a></p>
-      <p>History: <a href="https://www.jbc.org/article/S0021-9258%2820%2961522-8/fulltext" target="_blank" rel="noreferrer">Chargaff’s research (JBC)</a> · <a href="https://www.genome.gov/25520254/online-education-kit-1952-genes-are-made-of-dna" target="_blank" rel="noreferrer">Hershey–Chase, 1952 (NHGRI)</a></p>
-      <p>Lesson diagrams and header image: supplied PowerPoint, A1.2 Nucleic Acids.</p>
-    </footer>
   </body>
 </html>

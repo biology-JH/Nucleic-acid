@@ -4,8 +4,8 @@ const points = [
     syllabus: "DNA is the genetic material of all living organisms.",
     explanation: "DNA stores hereditary information in the cells of living organisms. Some viruses use RNA as their genetic material, but viruses are not considered living organisms.",
     questions: [
-      { q: "What is DNA’s central role in living organisms?", a: "It stores hereditary information that can be passed on and used by cells." },
-      { q: "Do RNA-genome viruses contradict the syllabus statement? Why?", a: "No. The statement concerns living organisms; viruses are not considered living." }
+      { q: "What is DNA’s central role in living organisms?", options: ["It stores hereditary information.", "It supplies every cell with energy.", "It forms the cell membrane.", "It digests proteins."] },
+      { q: "Do RNA-genome viruses contradict the syllabus statement?", options: ["Yes; viruses are living organisms.", "No; viruses are not considered living organisms.", "Yes; RNA and DNA are identical.", "No; viruses have no genetic material."] }
     ]
   },
   {
@@ -14,8 +14,8 @@ const points = [
     explanation: "Nucleotides are the monomers of nucleic acids. In a simple diagram, show phosphate as a circle, sugar as a pentagon and base as a rectangle.",
     image: { src: "/public/images/nucleotide.png", alt: "PowerPoint diagram of nucleotide parts connected in a strand", caption: "A nucleotide’s three parts: phosphate, pentose sugar and base." },
     questions: [
-      { q: "Name the three components of a nucleotide.", a: "A phosphate group, a pentose sugar and a nitrogenous base." },
-      { q: "Which shape represents the sugar in the syllabus diagram convention?", a: "A pentagon. The phosphate is a circle and the base is a rectangle." }
+      { q: "Which set lists the three components of a nucleotide?", options: ["Phosphate, pentose sugar and nitrogenous base.", "Glycerol, fatty acid and base.", "Amino acid, phosphate and ribose only.", "Glucose, lipid and nitrogenous base."] },
+      { q: "In the syllabus diagram convention, what shape represents the sugar?", options: ["A circle.", "A rectangle.", "A pentagon.", "A triangle."] }
     ]
   },
   {
@@ -23,18 +23,18 @@ const points = [
     syllabus: "Sugar–phosphate bonding forms the backbone of DNA and RNA.",
     explanation: "Covalent links join nucleotides into a continuous chain. Phosphodiester bonds join the sugars and phosphates into a continuous chain. The repeating sugar–phosphate backbone is strong; the bases project from it.",
     questions: [
-      { q: "What forms the repeating backbone of a nucleic acid strand?", a: "Alternating sugar and phosphate groups joined by covalent bonds." },
-      { q: "Where are the bases found relative to the backbone?", a: "They attach to the sugars and extend outward from the backbone." }
+      { q: "What forms the repeating backbone of a nucleic-acid strand?", options: ["Alternating sugars and phosphates.", "A row of nitrogenous bases only.", "A chain of amino acids.", "Alternating lipids and sugars."] },
+      { q: "Where are bases positioned relative to the backbone?", options: ["They replace every phosphate.", "They attach to sugars and project outward.", "They form a separate protein layer.", "They connect two backbones directly."] }
     ]
   },
   {
     id: "A1.2.4", level: "SL + HL", title: "Bases: the molecular code",
     syllabus: "The bases in each nucleic acid form the basis of a code.",
     explanation: "DNA uses adenine (A), thymine (T), cytosine (C) and guanine (G). RNA uses uracil (U) instead of thymine. The order of bases carries information.",
-    image: { src: "/public/images/bases.png", alt: "PowerPoint diagrams of the chemical structures of nitrogenous bases", caption: "The base sequence is information; RNA uses U where DNA uses T." },
+    image: { src: "/public/images/bases.png", alt: "PowerPoint diagrams of the chemical structures of nitrogenous bases", caption: "The base sequence carries information; RNA uses U where DNA uses T." },
     questions: [
-      { q: "Name the four bases in DNA. Which base replaces thymine in RNA?", a: "Adenine, thymine, cytosine and guanine; RNA uses uracil instead of thymine." },
-      { q: "How can a sequence of bases carry information?", a: "Different base orders create different messages in the nucleic acid." }
+      { q: "Which base is found in RNA instead of thymine?", options: ["Guanine.", "Cytosine.", "Uracil.", "Adenine."] },
+      { q: "How does a nucleic acid sequence carry information?", options: ["By the order of its bases.", "By the colour of its sugar.", "By changing its phosphate count at every gene.", "By the number of membranes around it."] }
     ]
   },
   {
@@ -42,8 +42,8 @@ const points = [
     syllabus: "RNA is a polymer formed by condensation of nucleotide monomers.",
     explanation: "RNA nucleotides join by condensation to form a single polynucleotide strand. Students should recognize a nucleotide and sketch a short RNA polymer.",
     questions: [
-      { q: "What is the monomer of RNA, and what is the polymer?", a: "The monomer is a ribonucleotide; the polymer is an RNA polynucleotide." },
-      { q: "What kind of reaction joins the nucleotide monomers?", a: "A condensation reaction joins them into a chain." }
+      { q: "What are the monomers that form an RNA polymer?", options: ["Ribonucleotides.", "Amino acids.", "Fatty acids.", "Monosaccharides only."] },
+      { q: "Which reaction joins RNA nucleotide monomers into a chain?", options: ["Hydrolysis.", "Condensation.", "Oxidation.", "Neutralisation."] }
     ]
   },
   {
@@ -52,8 +52,8 @@ const points = [
     explanation: "The strands run in opposite directions. Adenine pairs with thymine, and guanine pairs with cytosine; hydrogen bonds connect the bases. In diagrams, show the strands antiparallel. Drawing the helix itself is not required.",
     image: { src: "/public/images/antiparallel-dna.png", alt: "PowerPoint diagram of paired DNA strands and base-pair geometry", caption: "Complementary bases hold the two antiparallel strands together." },
     questions: [
-      { q: "Which bases pair in DNA? What type of bond links each pair?", a: "A pairs with T, and G pairs with C. Hydrogen bonds link the paired bases." },
-      { q: "What does antiparallel mean for the two DNA strands?", a: "They run in opposite directions: one 5′→3′ and the other 3′→5′." }
+      { q: "Which base pairing is correct in DNA?", options: ["A–G and C–T.", "A–T and G–C.", "A–C and T–G.", "A–U and G–C."] },
+      { q: "What does antiparallel mean for DNA strands?", options: ["Both run 5′→3′ in the same direction.", "They run in opposite directions.", "They contain no bases.", "They are joined by peptide bonds."] }
     ]
   },
   {
@@ -62,18 +62,18 @@ const points = [
     explanation: "DNA is usually double-stranded, contains deoxyribose and uses A, T, C and G. RNA is usually single-stranded, contains ribose and uses A, U, C and G. Be able to sketch the difference between ribose and deoxyribose. Examples of RNA include mRNA, tRNA and rRNA.",
     image: { src: "/public/images/dna-rna.png", alt: "PowerPoint comparison of DNA and RNA strand structures", caption: "A quick structural comparison of DNA and RNA." },
     questions: [
-      { q: "Give two structural differences between DNA and RNA.", a: "DNA is usually double-stranded and has deoxyribose and thymine; RNA is usually single-stranded and has ribose and uracil." },
-      { q: "What differs at the 2′ carbon in ribose and deoxyribose?", a: "Ribose has an –OH group; deoxyribose has –H." }
+      { q: "Which comparison of DNA and RNA is correct?", options: ["DNA has ribose and U; RNA has deoxyribose and T.", "DNA usually has two strands and T; RNA usually has one strand and U.", "Both always have two strands and T.", "Both use U and contain identical sugars."] },
+      { q: "What differs at the 2′ carbon of ribose and deoxyribose?", options: ["Ribose has –OH; deoxyribose has –H.", "Ribose has –H; deoxyribose has –OH.", "Both have an extra phosphate there.", "Neither sugar has a 2′ carbon."] }
     ]
   },
   {
     id: "A1.2.8", level: "SL + HL", title: "Complementarity copies and expresses information",
     syllabus: "Complementary base pairing allows genetic information to be replicated and expressed.",
     explanation: "During DNA replication, each strand can guide a complementary new strand. During transcription, DNA base pairing guides RNA assembly. During translation, matching between mRNA codons and tRNA anticodons helps deliver amino acids in sequence.",
-    image: { src: "/public/images/replication-expression.png", alt: "PowerPoint diagram of nucleic acid pairing during replication or expression", caption: "Base pairing connects stored DNA information to new nucleic acid strands." },
+    image: { src: "/public/images/replication-expression.png", alt: "PowerPoint diagram of nucleic-acid pairing during replication or expression", caption: "Base pairing connects stored DNA information to new nucleic-acid strands." },
     questions: [
-      { q: "How does complementary pairing help copy DNA accurately?", a: "Each original strand acts as a template for a matching new strand." },
-      { q: "Where does complementary matching contribute during gene expression?", a: "It guides RNA formation during transcription and codon–anticodon matching during translation." }
+      { q: "How does complementary pairing help copy DNA?", options: ["Each original strand guides a matching new strand.", "It changes DNA into protein directly.", "It removes all bases from the template.", "It prevents new nucleotides from joining."] },
+      { q: "Where does complementary matching contribute to gene expression?", options: ["Only during lipid synthesis.", "During transcription and codon–anticodon matching in translation.", "Only when DNA is packaged into nucleosomes.", "It has no role in expression."] }
     ]
   },
   {
@@ -81,8 +81,8 @@ const points = [
     syllabus: "DNA has a diversity of possible base sequences and a limitless capacity for information storage.",
     explanation: "A DNA sequence can be any length and use any order of four bases. A sequence of n positions has 4ⁿ possible arrangements, giving DNA vast information capacity in a compact molecule.",
     questions: [
-      { q: "How many sequences can be made from four bases across n positions?", a: "There are 4ⁿ possible sequences." },
-      { q: "Which has more possible sequences: a 50-base sequence or a 100-base sequence?", a: "A 100-base sequence, because each added position multiplies the possibilities by four." }
+      { q: "How many different sequences can four bases form across n positions?", options: ["4ⁿ.", "4 + n.", "n⁴ only when n is four.", "2n."] },
+      { q: "Why does a 100-base sequence have more possible arrangements than a 50-base sequence?", options: ["Each position can contain only one base.", "Every added position multiplies possible sequences by four.", "The longer strand uses more kinds of bases.", "DNA stops being complementary at 50 bases."] }
     ]
   },
   {
@@ -90,18 +90,18 @@ const points = [
     syllabus: "Conservation of the genetic code across life forms is evidence of universal common ancestry.",
     explanation: "Across living groups, the same codons usually specify the same amino acids. This strong conservation is evidence that life inherited the genetic code from common ancestors; the guide does not require memorizing specific examples.",
     questions: [
-      { q: "What does it mean that the genetic code is conserved?", a: "The same codons usually correspond to the same amino acids across diverse organisms." },
-      { q: "Why does this support common ancestry?", a: "A shared, highly conserved code is consistent with inheritance from common ancestors." }
+      { q: "What does it mean that the genetic code is conserved?", options: ["The same codons usually correspond to the same amino acids across many organisms.", "Every organism has the same DNA sequence.", "Only one codon is used in all cells.", "Codons differ completely between every species."] },
+      { q: "Why does a highly conserved genetic code support common ancestry?", options: ["It is consistent with inheritance from shared ancestors.", "It proves that all organisms are identical.", "It shows that DNA contains no information.", "It means the code evolved separately in every cell."] }
     ]
   },
   {
     id: "A1.2.11", level: "HL", title: "Directionality of DNA and RNA",
     syllabus: "DNA and RNA have 5′→3′ linkages and directionality that matters in replication, transcription and translation.",
     explanation: "A strand has a 5′ end and a 3′ end, giving it direction. Nucleic acids are synthesized 5′→3′ as new nucleotides join at the 3′ end. This affects how DNA is replicated, how RNA is transcribed and how mRNA is read in translation.",
-    image: { src: "/public/images/directionality.png", alt: "PowerPoint diagram showing opposite 5′ and 3′ orientations of two strands", caption: "Directionality: the 5′ and 3′ ends define each strand’s orientation." },
+    image: { src: "/public/images/directionality.png", alt: "PowerPoint diagram showing opposite 5′ and 3′ orientations of two strands", caption: "The 5′ and 3′ ends define each strand’s orientation." },
     questions: [
-      { q: "In which direction is a new DNA or RNA strand synthesized?", a: "5′→3′, by addition at the strand’s 3′ end." },
-      { q: "Why does directionality matter for gene expression?", a: "It determines the direction in which DNA is transcribed and mRNA is read." }
+      { q: "In which direction is a new DNA or RNA strand synthesized?", options: ["3′→5′ by addition at the 5′ end.", "5′→3′ by addition at the 3′ end.", "In both directions equally from every end.", "Direction has no relation to strand growth."] },
+      { q: "Why does nucleic-acid directionality matter?", options: ["It determines orientation in replication, transcription and translation.", "It changes the identity of every base.", "It replaces hydrogen bonds with peptide bonds.", "It determines only the molecule’s colour."] }
     ]
   },
   {
@@ -110,8 +110,8 @@ const points = [
     explanation: "Adenine and guanine are two-ring purines; cytosine and thymine are one-ring pyrimidines. Each DNA base pair contains one of each, keeping pair width consistent and supporting the same helix shape along the sequence.",
     image: { src: "/public/images/helix-stability.png", alt: "PowerPoint molecular diagrams comparing complementary DNA base pairs", caption: "A purine pairs with a pyrimidine in both A–T and G–C pairs." },
     questions: [
-      { q: "Which DNA bases are purines, and which are pyrimidines?", a: "Adenine and guanine are purines; cytosine and thymine are pyrimidines." },
-      { q: "How does one-purine–one-pyrimidine pairing help the helix?", a: "It keeps the base-pair width consistent and helps maintain helix geometry." }
+      { q: "Which bases are purines?", options: ["Cytosine and thymine.", "Adenine and guanine.", "Adenine and thymine.", "Guanine and cytosine."] },
+      { q: "How does one-purine–one-pyrimidine pairing support helix stability?", options: ["It keeps base-pair width consistent.", "It removes the sugar–phosphate backbone.", "It makes both strands run in the same direction.", "It prevents hydrogen bonding."] }
     ]
   },
   {
@@ -120,41 +120,49 @@ const points = [
     explanation: "DNA wraps around a histone octamer to form a nucleosome. Linker DNA connects neighboring nucleosomes; an additional histone protein associates with the linker. Use molecular visualization software to study how DNA associates with the proteins.",
     image: { src: "/public/images/nucleosome.png", alt: "PowerPoint model of DNA wrapped around a histone protein core", caption: "A nucleosome: DNA wrapped around a core of eight histones." },
     questions: [
-      { q: "What are the main components of a nucleosome?", a: "DNA wrapped around an eight-histone core, with an additional histone associated with linker DNA." },
-      { q: "What could molecular visualization software help you inspect?", a: "How the DNA strand wraps around and associates with the histone proteins." }
+      { q: "What is the core of a nucleosome?", options: ["DNA wrapped around eight histone proteins.", "RNA wrapped around a ribosome.", "A chain of eight nucleotides only.", "A phospholipid bilayer."] },
+      { q: "Where is the additional histone associated?", options: ["With linker DNA between nucleosomes.", "Inside every nucleotide base.", "At the end of an mRNA codon.", "On the outside of the cell membrane."] }
     ]
   },
   {
     id: "A1.2.14", level: "HL", title: "Hershey–Chase: evidence for DNA",
     syllabus: "The Hershey–Chase experiment provides evidence that DNA is the genetic material.",
     explanation: "Hershey and Chase used ³⁵S to label phage protein and ³²P to label phage DNA. After infection, blending and centrifugation, most ³²P was found with the bacterial cells, while ³⁵S remained with the phage coats. The results support DNA as the material entering cells to direct new phage production. Radioisotope technology made this experiment possible.",
-    image: { src: "/public/images/hershey-results.png", alt: "PowerPoint centrifugation diagram with sulfur-35 in supernatant and phosphorus-32 in bacterial pellet", caption: "The labeled DNA entered bacterial cells; most labeled protein stayed outside." },
+    image: { src: "/public/images/hershey-results.png", alt: "PowerPoint centrifugation diagram with sulfur-35 in supernatant and phosphorus-32 in bacterial pellet", caption: "Most labeled DNA entered bacterial cells; most labeled protein stayed outside." },
     questions: [
-      { q: "What did ³⁵S and ³²P label in the experiment?", a: "³⁵S labeled phage protein; ³²P labeled phage DNA." },
-      { q: "Where was most ³²P detected, and what did that support?", a: "In the bacterial pellet; this supported DNA as the genetic material entering the cells." }
+      { q: "What did ³⁵S and ³²P label in the experiment?", options: ["³⁵S labeled protein; ³²P labeled DNA.", "³⁵S labeled DNA; ³²P labeled protein.", "Both isotopes labeled only DNA.", "Both isotopes labeled only protein."] },
+      { q: "Where was most ³²P detected after infection and centrifugation?", options: ["With the bacterial pellet.", "Only in the phage coats in the supernatant.", "In the blender blades.", "Outside both fractions."] }
     ]
   },
   {
     id: "A1.2.15", level: "HL", title: "Chargaff’s data: diversity and falsification",
     syllabus: "Chargaff’s data describe relative amounts of purine and pyrimidine bases across diverse life forms.",
     explanation: "Chargaff found that DNA base composition varies among organisms while, in double-stranded DNA, A is approximately equal to T and G to C. The data challenged the tetranucleotide idea that DNA repeated all four bases equally. This is an example of evidence falsifying a scientific hypothesis.",
-    image: { src: "/public/images/chargaff-data.png", alt: "PowerPoint chart comparing DNA base composition across different organisms", caption: "Different organisms vary in base composition; paired bases show consistent relationships." },
+    image: { src: "/public/images/chargaff-data.png", alt: "PowerPoint chart comparing DNA base composition across different organisms", caption: "Organisms vary in DNA base composition; paired bases show consistent relationships." },
     questions: [
-      { q: "If double-stranded DNA is 28% cytosine, what percentage is adenine?", a: "22%. Guanine is also 28%, leaving 44% for A and T, or 22% each." },
-      { q: "What did Chargaff’s measurements challenge?", a: "The tetranucleotide hypothesis that DNA had a repeating, equal mixture of its four bases." }
+      { q: "In double-stranded DNA, which relationship did Chargaff’s findings support?", options: ["A ≈ T and G ≈ C.", "A ≈ G and T ≈ C.", "All four bases are always equal.", "A is absent whenever G is present."] },
+      { q: "What did Chargaff’s data challenge?", options: ["The idea that DNA is made of nucleotides.", "The tetranucleotide hypothesis of an equal, repeating mixture of four bases.", "The existence of different organisms.", "The use of radioisotopes in experiments."] }
     ]
   }
 ];
 
-function renderPoint(point, index) {
+function renderQuestion(question, pointId, qIndex) {
+  const name = `${pointId.toLowerCase().replaceAll(".", "-")}-q${qIndex + 1}`;
+  const options = question.options.map((option, index) => `
+      <label class="mc-option"><input type="radio" name="${name}" value="${index}" /><span>${option}</span></label>`).join("");
+  return `
+    <fieldset class="mc-question">
+      <legend>${qIndex + 1}. ${question.q}</legend>
+      <div class="mc-options">${options}
+      </div>
+    </fieldset>`;
+}
+
+function renderPoint(point) {
   const image = point.image
     ? `<figure class="point-visual"><img src="${point.image.src}" alt="${point.image.alt}" loading="lazy" /><figcaption>${point.image.caption}</figcaption></figure>`
     : "";
-  const questions = point.questions.map((item, qIndex) => `
-    <li>
-      <span>${item.q}</span>
-      <details><summary>Reveal an answer</summary><p>${item.a}</p></details>
-    </li>`).join("");
+  const questions = point.questions.map((item, qIndex) => renderQuestion(item, point.id, qIndex)).join("");
   return `
     <article class="point-card ${point.image ? "" : "no-image"}" id="${point.id.toLowerCase().replaceAll(".", "-")}">
       <div class="point-copy">
@@ -162,7 +170,7 @@ function renderPoint(point, index) {
         <h3>${point.title}</h3>
         <p class="syllabus-line">${point.syllabus}</p>
         <p class="point-explanation">${point.explanation}</p>
-        <div class="question-block"><h4>Check your understanding</h4><ol>${questions}</ol></div>
+        <div class="question-block"><h4>Multiple choice · choose one option for each question</h4>${questions}</div>
       </div>
       ${image}
     </article>`;
