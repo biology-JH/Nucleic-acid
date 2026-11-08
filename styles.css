@@ -154,7 +154,7 @@ p { margin: 0 0 1rem; }
   .timeline article::before { top: .5rem; left: -1.7rem; }
   .point-card, .point-card.no-image { grid-template-columns: 1fr; gap: 1rem; }
   .point-card { padding-block: 2.4rem; }
-  .point-visual { grid-row: 2; }
+  .point-visual { grid-row: auto; }
   .point-visual img { max-height: 440px; }
   .plenary-heading h2 { font-size: clamp(2rem, 13vw, 2.6rem); }
   .table-scroll-hint { display: block; margin: .7rem 0 0; color: var(--muted); font-size: 24px; }
@@ -171,8 +171,8 @@ p { margin: 0 0 1rem; }
 /* Revision: photo-led header, persistent content chooser, MCQ controls and video blog. */
 .hero { display: flex; grid-template-columns: none; align-items: center; min-height: 700px; padding: clamp(3.5rem, 8vw, 7rem) max(6vw, calc((100vw - 1500px) / 2)); }
 .hero::before { display: none; }
-.hero::after { content: ""; position: absolute; inset: 0; z-index: 0; background: linear-gradient(90deg, rgba(8, 20, 38, .94) 0%, rgba(8, 20, 38, .77) 42%, rgba(8, 20, 38, .26) 100%); pointer-events: none; }
-.hero-copy { position: relative; z-index: 2; width: min(100%, 850px); }
+.hero::after { display: none; }
+.hero-copy { position: relative; z-index: 2; width: min(100%, 850px); text-shadow: 0 2px 12px rgba(0, 0, 0, .92); }
 .hero-art { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; margin: 0; }
 .hero-art img { width: 100%; height: 100%; border: 0; border-radius: 0; object-fit: cover; object-position: center 52%; box-shadow: none; }
 .hero-art figcaption { position: absolute; right: 6vw; bottom: 3rem; width: min(37%, 600px); margin: 0; padding: .6rem .9rem; border-radius: 12px; color: #fff; background: rgba(8, 20, 38, .72); font-size: 24px; line-height: 1.35; }
@@ -218,7 +218,7 @@ p { margin: 0 0 1rem; }
   .side-panel { position: relative; top: auto; max-height: 390px; margin: .8rem 1rem 0; border-radius: 16px; }
   .side-links { max-height: 315px; }
   .hero { display: flex; min-height: 740px; padding: 3.5rem 1.2rem 5.2rem; }
-  .hero::after { background: linear-gradient(90deg, rgba(8, 20, 38, .84) 0%, rgba(8, 20, 38, .57) 72%, rgba(8, 20, 38, .38) 100%); }
+  .hero::after { display: none; }
   .hero-art img { object-position: 34% center; }
   .hero-art figcaption { right: 1rem; bottom: 2.6rem; width: min(86%, 520px); }
   .hero h1 { font-size: clamp(4.2rem, 19vw, 6rem); }
@@ -474,4 +474,37 @@ p { margin: 0 0 1rem; }
   .lens-beautiful p:last-child { grid-column: 1; grid-row: auto; }
   .lens-beautiful p:last-child { max-width: none; }
   .lens-card:not(.lens-beautiful) { min-height: auto; }
+}
+
+
+/* Clear labels for the five base structures shown in A1.2.4. */
+.base-key {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .65rem;
+  width: min(100%, 1200px);
+  margin: .35rem auto 1.5rem;
+}
+.base-key > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  min-width: 0;
+  padding: .7rem .8rem;
+  border: 1px solid #d2dcda;
+  border-radius: 12px;
+  color: var(--ink);
+  background: var(--white);
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.base-key strong { flex: 0 0 auto; color: #087d76; font-size: 1.15em; }
+.base-key span { font-size: 24px; line-height: 1.2; }
+@media (max-width: 760px) {
+  .base-key { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
+  .base-key > div { justify-content: flex-start; padding: .6rem; }
 }

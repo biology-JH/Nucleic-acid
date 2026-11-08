@@ -3,6 +3,7 @@ const points = [
     id: "A1.2.1", level: "SL + HL", title: "DNA as the genetic material of all living organisms",
     syllabus: "DNA is the genetic material of all living organisms.",
     explanation: "DNA stores hereditary information in the cells of living organisms. Some viruses use RNA as their genetic material, but viruses are not considered living organisms.",
+    image: { wide: true, maxWidth: 500, src: "/manus-storage/genetic-material_d6269cbf.jpg", fallback: "/public/images/genetic-material.jpg", alt: "A colorful DNA double helix representing hereditary material.", caption: "DNA stores hereditary information in living organisms." },
     questions: [
       { q: "What is DNA’s central role in living organisms?", options: ["It stores hereditary information.", "It supplies every cell with energy.", "It forms the cell membrane.", "It digests proteins."] },
       { q: "Do RNA-genome viruses contradict the syllabus statement?", options: ["Yes; viruses are living organisms.", "No; viruses are not considered living organisms.", "Yes; RNA and DNA are identical.", "No; viruses have no genetic material."] }
@@ -22,6 +23,7 @@ const points = [
     id: "A1.2.3", level: "SL + HL", title: "The sugar–phosphate backbone",
     syllabus: "Sugar–phosphate bonding forms the backbone of DNA and RNA.",
     explanation: "Covalent links join nucleotides into a continuous chain. Phosphodiester bonds join the sugars and phosphates into a continuous chain. The repeating sugar–phosphate backbone is strong; the bases project from it.",
+    image: { wide: true, maxWidth: 670, src: "/manus-storage/backbone-link_a544a266.png", fallback: "/public/images/backbone-link.png", alt: "Adjacent nucleotide sugars joined through a phosphate group.", caption: "Phosphodiester bonds create the repeating sugar–phosphate backbone." },
     questions: [
       { q: "What forms the repeating backbone of a nucleic-acid strand?", options: ["Alternating sugars and phosphates.", "A row of nitrogenous bases only.", "A chain of amino acids.", "Alternating lipids and sugars."] },
       { q: "Where are bases positioned relative to the backbone?", options: ["They replace every phosphate.", "They attach to sugars and project outward.", "They form a separate protein layer.", "They connect two backbones directly."] }
@@ -31,7 +33,8 @@ const points = [
     id: "A1.2.4", level: "SL + HL", title: "Bases: the molecular code",
     syllabus: "The bases in each nucleic acid form the basis of a code.",
     explanation: "DNA uses adenine (A), thymine (T), cytosine (C) and guanine (G). RNA uses uracil (U) instead of thymine. The order of bases carries information.",
-    image: { wide: true, maxWidth: 734, src: "/public/images/bases.png", alt: "Chemical structures of the four nitrogenous bases", caption: "The base sequence carries information; RNA uses U where DNA uses T." },
+    image: { wide: true, maxWidth: 734, src: "/public/images/bases.png", alt: "Chemical structures of adenine and guanine, the purine bases.", caption: "Purines: adenine (A) and guanine (G)." },
+    extraImages: [{ wide: true, maxWidth: 734, src: "/manus-storage/pyrimidines_05d8fa69.png", fallback: "/public/images/pyrimidines.png", alt: "Chemical structures of cytosine, thymine and uracil.", caption: "Pyrimidines: cytosine (C), thymine (T) in DNA and uracil (U) in RNA." }],
     questions: [
       { q: "Which base is found in RNA instead of thymine?", options: ["Guanine.", "Cytosine.", "Uracil.", "Adenine."] },
       { q: "How does a nucleic acid sequence carry information?", options: ["By the order of its bases.", "By the colour of its sugar.", "By changing its phosphate count at every gene.", "By the number of membranes around it."] }
@@ -41,6 +44,7 @@ const points = [
     id: "A1.2.5", level: "SL + HL", title: "RNA: a polymer made by condensation",
     syllabus: "RNA is a polymer formed by condensation of nucleotide monomers.",
     explanation: "RNA nucleotides join by condensation to form a single polynucleotide strand. Students should recognize a nucleotide and sketch a short RNA polymer.",
+    image: { wide: true, maxWidth: 670, src: "/manus-storage/rna-polymer_23cde134.png", fallback: "/public/images/rna-polymer.png", alt: "A single-stranded RNA polymer with a sugar–phosphate chain and varied bases.", caption: "RNA is formed when ribonucleotides join by condensation." },
     questions: [
       { q: "What are the monomers that form an RNA polymer?", options: ["Ribonucleotides.", "Amino acids.", "Fatty acids.", "Monosaccharides only."] },
       { q: "Which reaction joins RNA nucleotide monomers into a chain?", options: ["Hydrolysis.", "Condensation.", "Oxidation.", "Neutralisation."] }
@@ -50,7 +54,7 @@ const points = [
     id: "A1.2.6", level: "SL + HL", title: "DNA: two complementary strands",
     syllabus: "DNA is a double helix of two antiparallel nucleotide strands linked by hydrogen bonds between complementary base pairs.",
     explanation: "The strands run in opposite directions. Adenine pairs with thymine, and guanine pairs with cytosine; hydrogen bonds connect the bases. In diagrams, show the strands antiparallel. Drawing the helix itself is not required.",
-    image: { src: "/public/images/antiparallel-dna.png", alt: "Paired DNA strands and complementary base-pair geometry", caption: "Complementary bases hold the two antiparallel strands together." },
+    image: { wide: true, maxWidth: 670, src: "/public/images/antiparallel-dna.png", alt: "Paired DNA strands and complementary base-pair geometry", caption: "Complementary bases hold the two antiparallel strands together." },
     questions: [
       { q: "Which base pairing is correct in DNA?", options: ["A–G and C–T.", "A–T and G–C.", "A–C and T–G.", "A–U and G–C."] },
       { q: "What does antiparallel mean for DNA strands?", options: ["Both run 5′→3′ in the same direction.", "They run in opposite directions.", "They contain no bases.", "They are joined by peptide bonds."] }
@@ -80,6 +84,7 @@ const points = [
     id: "A1.2.9", level: "SL + HL", title: "DNA can store limitless sequences",
     syllabus: "DNA has a diversity of possible base sequences and a limitless capacity for information storage.",
     explanation: "A DNA sequence can be any length and use any order of four bases. A sequence of n positions has 4ⁿ possible arrangements, giving DNA vast information capacity in a compact molecule.",
+    image: { wide: true, maxWidth: 643, src: "/manus-storage/base-sequence_2c430675.png", fallback: "/public/images/base-sequence.png", alt: "A single nucleic-acid strand carrying an ordered sequence of A, U, C and G bases.", caption: "An ordered base sequence carries information; DNA uses T where RNA uses U." },
     questions: [
       { q: "How many different sequences can four bases form across n positions?", options: ["4ⁿ.", "4 + n.", "n⁴ only when n is four.", "2n."] },
       { q: "Why does a 100-base sequence have more possible arrangements than a 50-base sequence?", options: ["Each position can contain only one base.", "Every added position multiplies possible sequences by four.", "The longer strand uses more kinds of bases.", "DNA stops being complementary at 50 bases."] }
@@ -89,6 +94,7 @@ const points = [
     id: "A1.2.10", level: "SL + HL", title: "A conserved code points to common ancestry",
     syllabus: "Conservation of the genetic code across life forms is evidence of universal common ancestry.",
     explanation: "Across living groups, the same codons usually specify the same amino acids. This strong conservation is evidence that life inherited the genetic code from common ancestors; the guide does not require memorizing specific examples.",
+    image: { wide: true, maxWidth: 643, src: "/manus-storage/common-ancestry_19c5146b.jpg", fallback: "/public/images/common-ancestry.jpg", alt: "A researcher beside automated laboratory instruments used to analyze biological samples.", caption: "A shared genetic code across life forms is evidence for common ancestry." },
     questions: [
       { q: "What does it mean that the genetic code is conserved?", options: ["The same codons usually correspond to the same amino acids across many organisms.", "Every organism has the same DNA sequence.", "Only one codon is used in all cells.", "Codons differ completely between every species."] },
       { q: "Why does a highly conserved genetic code support common ancestry?", options: ["It is consistent with inheritance from shared ancestors.", "It proves that all organisms are identical.", "It shows that DNA contains no information.", "It means the code evolved separately in every cell."] }
@@ -108,7 +114,7 @@ const points = [
     id: "A1.2.12", level: "HL", title: "Purine–pyrimidine pairing stabilizes the helix",
     syllabus: "Purine-to-pyrimidine bonding contributes to DNA helix stability.",
     explanation: "Adenine and guanine are two-ring purines; cytosine and thymine are one-ring pyrimidines. Each DNA base pair contains one of each, keeping pair width consistent and supporting the same helix shape along the sequence.",
-    image: { src: "/public/images/helix-stability.png", alt: "Molecular structures of complementary DNA base pairs", caption: "A purine pairs with a pyrimidine in both A–T and G–C pairs." },
+    image: { wide: true, maxWidth: 670, src: "/public/images/helix-stability.png", alt: "Molecular structures of complementary DNA base pairs", caption: "A purine pairs with a pyrimidine in both A–T and G–C pairs." },
     video: { id: "TrNeuH6JOVc", title: "Visualising DNA Geometry", description: "Explore antiparallel strands, grooves and helix width alongside purine–pyrimidine pairing." },
     questions: [
       { q: "Which bases are purines?", options: ["Cytosine and thymine.", "Adenine and guanine.", "Adenine and thymine.", "Guanine and cytosine."] },
@@ -119,7 +125,7 @@ const points = [
     id: "A1.2.13", level: "HL", title: "Packaging DNA into nucleosomes",
     syllabus: "A nucleosome is DNA wrapped around a core of eight histone proteins, held together by an additional histone attached to linker DNA.",
     explanation: "DNA wraps around a histone octamer to form a nucleosome. Linker DNA connects neighboring nucleosomes; an additional histone protein associates with the linker. Use molecular visualization software to study how DNA associates with the proteins.",
-    image: { src: "/public/images/nucleosome.png", alt: "DNA wrapped around a histone protein core", caption: "A nucleosome: DNA wrapped around a core of eight histones." },
+    image: { wide: true, maxWidth: 610, src: "/public/images/nucleosome.png", alt: "DNA wrapped around a histone protein core", caption: "A nucleosome: DNA wrapped around a core of eight histones." },
     questions: [
       { q: "What is the core of a nucleosome?", options: ["DNA wrapped around eight histone proteins.", "RNA wrapped around a ribosome.", "A chain of eight nucleotides only.", "A phospholipid bilayer."] },
       { q: "Where is the additional histone associated?", options: ["With linker DNA between nucleosomes.", "Inside every nucleotide base.", "At the end of an mRNA codon.", "On the outside of the cell membrane."] }
@@ -129,7 +135,7 @@ const points = [
     id: "A1.2.14", level: "HL", title: "Hershey–Chase: evidence for DNA",
     syllabus: "The Hershey–Chase experiment provides evidence that DNA is the genetic material.",
     explanation: "Hershey and Chase used ³⁵S to label phage protein and ³²P to label phage DNA. After infection, blending and centrifugation, most ³²P was found with the bacterial cells, while ³⁵S remained with the phage coats. The results support DNA as the material entering cells to direct new phage production. Radioisotope technology made this experiment possible.",
-    image: { src: "/public/images/hershey-results.png", alt: "Centrifugation results: sulfur-35 in the supernatant and phosphorus-32 in the bacterial pellet", caption: "Most labeled DNA entered bacterial cells; most labeled protein stayed outside." },
+    image: { wide: true, maxWidth: 610, src: "/public/images/hershey-results.png", alt: "Centrifugation results: sulfur-35 in the supernatant and phosphorus-32 in the bacterial pellet", caption: "Most labeled DNA entered bacterial cells; most labeled protein stayed outside." },
     video: { id: "tSHevjh123A", title: "The Hershey–Chase Experiment", description: "Follow how radioisotope labels and centrifugation tested whether phage DNA or protein entered bacteria." },
     questions: [
       { q: "What did ³⁵S and ³²P label in the experiment?", options: ["³⁵S labeled protein; ³²P labeled DNA.", "³⁵S labeled DNA; ³²P labeled protein.", "Both isotopes labeled only DNA.", "Both isotopes labeled only protein."] },
@@ -140,7 +146,7 @@ const points = [
     id: "A1.2.15", level: "HL", title: "Chargaff’s data: diversity and falsification",
     syllabus: "Chargaff’s data describe relative amounts of purine and pyrimidine bases across diverse life forms.",
     explanation: "Chargaff found that DNA base composition varies among organisms while, in double-stranded DNA, A is approximately equal to T and G to C. The data challenged the tetranucleotide idea that DNA repeated all four bases equally. This is an example of evidence falsifying a scientific hypothesis.",
-    image: { src: "/public/images/chargaff-data.png", alt: "Chart comparing DNA base composition across different organisms", caption: "Organisms vary in DNA base composition; paired bases show consistent relationships." },
+    image: { wide: true, maxWidth: 670, src: "/public/images/chargaff-data.png", alt: "Chart comparing DNA base composition across different organisms", caption: "Organisms vary in DNA base composition; paired bases show consistent relationships." },
     questions: [
       { q: "In double-stranded DNA, which relationship did Chargaff’s findings support?", options: ["A ≈ T and G ≈ C.", "A ≈ G and T ≈ C.", "All four bases are always equal.", "A is absent whenever G is present."] },
       { q: "What did Chargaff’s data challenge?", options: ["The idea that DNA is made of nucleotides.", "The tetranucleotide hypothesis of an equal, repeating mixture of four bases.", "The existence of different organisms.", "The use of radioisotopes in experiments."] }
@@ -158,13 +164,25 @@ function renderQuestion(question, pointId, qIndex) {
       <div class="mc-options">${options}
       </div>
     </fieldset>`;
-}
+  }
 
 function renderPoint(point) {
-  const imageClasses = point.image?.wide ? "point-visual point-visual-wide" : "point-visual";
-  const figureStyle = point.image?.wide ? ` style="--figure-max-width:${point.image.maxWidth || 1200}px"` : "";
-  const image = point.image
-    ? `<figure class="${imageClasses}"${figureStyle}><img src="${point.image.src}" alt="${point.image.alt}" loading="lazy" /><figcaption>${point.image.caption}</figcaption></figure>`
+  const renderFigure = (item) => {
+    const imageClasses = item.wide ? "point-visual point-visual-wide" : "point-visual";
+    const figureStyle = item.wide ? ` style="--figure-max-width:${item.maxWidth || 1200}px"` : "";
+    const fallback = item.fallback ? ` onerror="this.onerror=null;this.src='${item.fallback}'"` : "";
+    return `<figure class="${imageClasses}"${figureStyle}><img src="${item.src}" alt="${item.alt}" loading="lazy"${fallback} /><figcaption>${item.caption}</figcaption></figure>`;
+  };
+  const imageList = [point.image, ...(point.extraImages || [])].filter(Boolean);
+  const image = imageList.map(renderFigure).join("");
+  const baseKey = point.id === "A1.2.4"
+    ? `<div class="base-key" role="list" aria-label="The five nucleobases">
+        <div role="listitem"><strong>A</strong><span>Adenine</span></div>
+        <div role="listitem"><strong>T</strong><span>Thymine</span></div>
+        <div role="listitem"><strong>C</strong><span>Cytosine</span></div>
+        <div role="listitem"><strong>G</strong><span>Guanine</span></div>
+        <div role="listitem"><strong>U</strong><span>Uracil · RNA</span></div>
+      </div>`
     : "";
   const questions = point.questions.map((item, qIndex) => renderQuestion(item, point.id, qIndex)).join("");
   const video = point.video
@@ -184,6 +202,7 @@ function renderPoint(point) {
         <p class="point-explanation">${point.explanation}</p>
       </div>
       ${image}
+      ${baseKey}
       ${video}
       <div class="question-block"><h4>Multiple choice · choose one option for each question</h4>${questions}</div>
     </article>`;
