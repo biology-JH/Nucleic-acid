@@ -2,7 +2,7 @@
 
 - [x] **Ordered, complete 2025 IB Biology A1.2 coverage.** Build the lesson from the supplied A1.2NucleicAcids PowerPoint and check it against the official 2025 Biology Guide. Cover every syllabus point in order: A1.2.1–A1.2.10 labeled SL + HL, followed by A1.2.11–A1.2.15 labeled HL. Keep teaching copy concise and accurate to the guide, with relevant slide content and selected PowerPoint pictures. Put 2–3 questions immediately after every syllabus point.
 - [x] **Lesson framing and learning sequence.** Include a starter, then immediately a 12-term whole-site English–Traditional Chinese key-term section. Lay out the terms in four columns per row as keyword, Chinese, keyword, Chinese. Include the requested Beautiful, What, Why, and How framing, a chronological topic sequence, and a plenary.
-- [x] **Large, accessible visual design.** Use supplied PowerPoint/PDF imagery only where needed; keep all instructional text and visible labels at 24px or larger and the layout responsive.
+- [x] **Large, accessible visual design.** Use supplied PowerPoint/PDF imagery only where needed; keep instructional text at 24px or larger, except for the compact A–T–C–G–U labels explicitly requested to fit in one row; keep the layout responsive.
 - [x] **Replace the header image.** Use the second picture from the attached `NucleicAcids_DNAandRNA(1).pdf` as the header.
 - [x] **Left-side content choice.** Provide a left panel with links to the starter, terms, framing, chronology, all 15 syllabus points grouped as SL + HL and HL, PowerPoint videos, and plenary.
 - [x] **Multiple-choice checks.** Remove answer reveals and put two multiple-choice questions after each syllabus point/session.
@@ -22,3 +22,7 @@
 - [x] **Evaluate the new PDF pictures.** Compare the pictures in `TropicResponsesinSeedlings_VisualInvestigation(1).pdf` with the current nucleic-acid diagrams; replace only blog images that the PDF depicts more clearly or relevantly, and resize without distortion.
 - [x] **Keep all five base names in one row.** Display A, T, C, G and U with their English names together in a single horizontal row; prevent wrapping to a second row at narrow widths while allowing local horizontal scrolling if needed.
 - [x] **Use the full right-hand lesson panel for point text.** Let the titles, syllabus statements and explanations for all 15 sessions use the full width of the lesson panel to the right of navigation, including the named genetic-material, backbone, base-code and RNA-polymer sessions; apply the same treatment to the remaining paragraphs.
+- [x] **Compact the base labels.** Make the A–T–C–G–U names smaller so all five fit together in one horizontal row.
+- [x] **Use the first comparison-PDF picture.** Replace the current A1.2.7 DNA/RNA-comparison visual with the first picture from `ComparingDNAandRNA.pdf`.
+- [x] **Use the second comparison-PDF picture.** Replace the image in `A conserved code points to common ancestry` (A1.2.10) with the second picture from `ComparingDNAandRNA.pdf`.
+- [x] **Autocorrect every multiple-choice question.** On selecting an option, automatically mark correct or incorrect, identify the correct option after a wrong choice, and provide immediate accessible feedback without a separate reveal-answer button.
