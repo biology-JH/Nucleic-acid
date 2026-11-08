@@ -1,0 +1,5 @@
+# Website outcomes
+
+- [x] **Ordered, complete 2025 IB Biology A1.2 coverage.** Build the lesson from the supplied A1.2NucleicAcids PowerPoint and check it against the official 2025 Biology Guide. Cover every syllabus point in order: A1.2.1–A1.2.10 labeled SL + HL, followed by A1.2.11–A1.2.15 labeled HL. Keep teaching copy concise and accurate to the guide, with relevant slide content and selected PowerPoint pictures. Put 2–3 questions immediately after every syllabus point.
+- [x] **Lesson framing and learning sequence.** Include a starter, then immediately a 12-term whole-site English–Traditional Chinese key-term section. Lay out the terms in four columns per row as keyword, Chinese, keyword, Chinese. Include the requested Beautiful, What, Why, and How framing, a chronological topic sequence, and a plenary.
+- [x] **Large, accessible visual design.** Use a PowerPoint picture as the large, beautiful page header and only necessary PowerPoint images in lesson content. Do not use Manus imagery or unrelated generated imagery. Keep all instructional text and visible labels at 24px or larger, with concise responsive presentation.
