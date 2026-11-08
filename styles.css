@@ -508,3 +508,38 @@ p { margin: 0 0 1rem; }
   .base-key { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
   .base-key > div { justify-content: flex-start; padding: .6rem; }
 }
+
+
+/* Give each syllabus point the full right-hand lesson panel. */
+.point-copy {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+.point-explanation {
+  width: 100%;
+  max-width: none;
+}
+.point-card > .question-block { grid-column: 1 / -1; }
+
+/* Keep A, T, C, G and U in one row on narrow screens. */
+@media (max-width: 760px) {
+  .base-key {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+  }
+  .base-key > div {
+    flex: 0 0 136px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 96px;
+    padding: .6rem .45rem;
+    scroll-snap-align: start;
+  }
+}

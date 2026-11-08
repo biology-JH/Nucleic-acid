@@ -3,7 +3,7 @@ const points = [
     id: "A1.2.1", level: "SL + HL", title: "DNA as the genetic material of all living organisms",
     syllabus: "DNA is the genetic material of all living organisms.",
     explanation: "DNA stores hereditary information in the cells of living organisms. Some viruses use RNA as their genetic material, but viruses are not considered living organisms.",
-    image: { wide: true, maxWidth: 500, src: "/manus-storage/genetic-material_d6269cbf.jpg", fallback: "/public/images/genetic-material.jpg", alt: "A colorful DNA double helix representing hereditary material.", caption: "DNA stores hereditary information in living organisms." },
+    image: { wide: true, maxWidth: 1095, src: "/manus-storage/genetic-material-pdf_23aa378a.jpg", fallback: "/public/images/genetic-material-pdf.jpg", alt: "A DNA helix beside a seedling, frog, mushroom, bacterium and virus illustration.", caption: "DNA carries hereditary information in living organisms; viruses are not considered living." },
     questions: [
       { q: "What is DNA’s central role in living organisms?", options: ["It stores hereditary information.", "It supplies every cell with energy.", "It forms the cell membrane.", "It digests proteins."] },
       { q: "Do RNA-genome viruses contradict the syllabus statement?", options: ["Yes; viruses are living organisms.", "No; viruses are not considered living organisms.", "Yes; RNA and DNA are identical.", "No; viruses have no genetic material."] }
@@ -23,7 +23,7 @@ const points = [
     id: "A1.2.3", level: "SL + HL", title: "The sugar–phosphate backbone",
     syllabus: "Sugar–phosphate bonding forms the backbone of DNA and RNA.",
     explanation: "Covalent links join nucleotides into a continuous chain. Phosphodiester bonds join the sugars and phosphates into a continuous chain. The repeating sugar–phosphate backbone is strong; the bases project from it.",
-    image: { wide: true, maxWidth: 670, src: "/manus-storage/backbone-link_a544a266.png", fallback: "/public/images/backbone-link.png", alt: "Adjacent nucleotide sugars joined through a phosphate group.", caption: "Phosphodiester bonds create the repeating sugar–phosphate backbone." },
+    image: { wide: true, maxWidth: 1046, src: "/manus-storage/backbone-pdf_96b6b5e0.jpg", fallback: "/public/images/backbone-pdf.jpg", alt: "A labeled comparison of DNA deoxyribose and RNA ribose along sugar–phosphate strands.", caption: "DNA has 2′ H and RNA has 2′ OH; both have repeating sugar–phosphate backbones." },
     questions: [
       { q: "What forms the repeating backbone of a nucleic-acid strand?", options: ["Alternating sugars and phosphates.", "A row of nitrogenous bases only.", "A chain of amino acids.", "Alternating lipids and sugars."] },
       { q: "Where are bases positioned relative to the backbone?", options: ["They replace every phosphate.", "They attach to sugars and project outward.", "They form a separate protein layer.", "They connect two backbones directly."] }
@@ -44,7 +44,7 @@ const points = [
     id: "A1.2.5", level: "SL + HL", title: "RNA: a polymer made by condensation",
     syllabus: "RNA is a polymer formed by condensation of nucleotide monomers.",
     explanation: "RNA nucleotides join by condensation to form a single polynucleotide strand. Students should recognize a nucleotide and sketch a short RNA polymer.",
-    image: { wide: true, maxWidth: 670, src: "/manus-storage/rna-polymer_23cde134.png", fallback: "/public/images/rna-polymer.png", alt: "A single-stranded RNA polymer with a sugar–phosphate chain and varied bases.", caption: "RNA is formed when ribonucleotides join by condensation." },
+    image: { wide: true, maxWidth: 1057, src: "/manus-storage/rna-condensation-pdf_46613777.jpg", fallback: "/public/images/rna-condensation-pdf.jpg", alt: "Ribonucleotides join by condensation to form an RNA strand, with water released and phosphodiester bonds formed.", caption: "Condensation links ribonucleotides into an RNA strand and releases water." },
     questions: [
       { q: "What are the monomers that form an RNA polymer?", options: ["Ribonucleotides.", "Amino acids.", "Fatty acids.", "Monosaccharides only."] },
       { q: "Which reaction joins RNA nucleotide monomers into a chain?", options: ["Hydrolysis.", "Condensation.", "Oxidation.", "Neutralisation."] }
@@ -64,7 +64,7 @@ const points = [
     id: "A1.2.7", level: "SL + HL", title: "DNA and RNA compared",
     syllabus: "Compare DNA and RNA by strand number, nitrogenous bases and pentose sugar.",
     explanation: "DNA is usually double-stranded, contains deoxyribose and uses A, T, C and G. RNA is usually single-stranded, contains ribose and uses A, U, C and G. Be able to sketch the difference between ribose and deoxyribose. Examples of RNA include mRNA, tRNA and rRNA.",
-    image: { wide: true, maxWidth: 734, src: "/public/images/dna-rna.png", alt: "Structural comparison of DNA and RNA strands", caption: "A quick structural comparison of DNA and RNA." },
+    image: { wide: true, maxWidth: 1042, src: "/manus-storage/dna-rna-comparison-pdf_a316ae6f.jpg", fallback: "/public/images/dna-rna-comparison-pdf.jpg", alt: "A diagram compares DNA and RNA nucleotide sugars, bases and a single RNA polynucleotide strand.", caption: "DNA has deoxyribose and T; RNA has ribose and U and forms a single strand." },
     questions: [
       { q: "Which comparison of DNA and RNA is correct?", options: ["DNA has ribose and U; RNA has deoxyribose and T.", "DNA usually has two strands and T; RNA usually has one strand and U.", "Both always have two strands and T.", "Both use U and contain identical sugars."] },
       { q: "What differs at the 2′ carbon of ribose and deoxyribose?", options: ["Ribose has –OH; deoxyribose has –H.", "Ribose has –H; deoxyribose has –OH.", "Both have an extra phosphate there.", "Neither sugar has a 2′ carbon."] }
