@@ -484,7 +484,7 @@ p { margin: 0 0 1rem; }
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: .65rem;
   width: min(100%, 1200px);
-  margin: .35rem auto 1.5rem;
+  margin: .35rem auto .55rem;
 }
 .base-key > div {
   display: flex;
@@ -567,8 +567,15 @@ p { margin: 0 0 1rem; }
   text-align: center;
   overflow-wrap: anywhere;
 }
-.base-key strong { font-size: 19px; line-height: 1.1; }
-.base-key span { font-size: 14px; line-height: 1.15; overflow-wrap: anywhere; }
+.base-key strong { font-size: 21px; line-height: 1.1; }
+.base-key span { font-size: 16px; line-height: 1.15; overflow-wrap: anywhere; }
+.base-key > .base-item { color: var(--base-ink); border-color: var(--base-border); background: var(--base-bg); font-weight: 650; }
+.base-key > .base-item strong { color: var(--base-ink); }
+.base-a { --base-ink: #0b6357; --base-bg: #e6f5ef; --base-border: #90c8bb; }
+.base-t { --base-ink: #8e3b2e; --base-bg: #fff0eb; --base-border: #dda092; }
+.base-c { --base-ink: #2d4f86; --base-bg: #edf3ff; --base-border: #9bb3de; }
+.base-g { --base-ink: #705000; --base-bg: #fff5d9; --base-border: #dcc77e; }
+.base-u { --base-ink: #5c3b87; --base-bg: #f2ebfa; --base-border: #b9a2d7; }
 @media (max-width: 760px) {
   .base-key {
     display: grid;
@@ -577,8 +584,8 @@ p { margin: 0 0 1rem; }
     overflow: visible;
   }
   .base-key > div { flex: initial; min-height: 0; padding: .3rem .06rem; }
-  .base-key strong { font-size: 16px; }
-  .base-key span { font-size: 13px; }
+  .base-key strong { font-size: 18px; }
+  .base-key span { font-size: 15px; }
 }
 
 /* Immediate, accessible multiple-choice grading. */

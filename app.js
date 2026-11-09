@@ -178,11 +178,11 @@ function renderPoint(point) {
   const image = imageList.map(renderFigure).join("");
   const baseKey = point.id === "A1.2.4"
     ? `<div class="base-key" role="list" aria-label="The five nucleobases">
-        <div role="listitem"><strong>A</strong><span>Adenine</span></div>
-        <div role="listitem"><strong>T</strong><span>Thymine</span></div>
-        <div role="listitem"><strong>C</strong><span>Cytosine</span></div>
-        <div role="listitem"><strong>G</strong><span>Guanine</span></div>
-        <div role="listitem"><strong>U</strong><span>Uracil · RNA</span></div>
+        <div class="base-item base-a" role="listitem"><strong>A</strong><span>Adenine</span></div>
+        <div class="base-item base-t" role="listitem"><strong>T</strong><span>Thymine</span></div>
+        <div class="base-item base-c" role="listitem"><strong>C</strong><span>Cytosine</span></div>
+        <div class="base-item base-g" role="listitem"><strong>G</strong><span>Guanine</span></div>
+        <div class="base-item base-u" role="listitem"><strong>U</strong><span>Uracil · RNA</span></div>
       </div>`
     : "";
   const questions = point.questions.map((item, qIndex) => renderQuestion(item, point.id, qIndex)).join("");
@@ -202,8 +202,8 @@ function renderPoint(point) {
         <p class="syllabus-line">${point.syllabus}</p>
         <p class="point-explanation">${point.explanation}</p>
       </div>
-      ${image}
       ${baseKey}
+      ${image}
       ${video}
       <div class="question-block"><h4>Multiple choice · select an option for instant feedback</h4>${questions}</div>
     </article>`;
