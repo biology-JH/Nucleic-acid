@@ -26,3 +26,5 @@
 - [x] **Use the first comparison-PDF picture.** Replace the current A1.2.7 DNA/RNA-comparison visual with the first picture from `ComparingDNAandRNA.pdf`.
 - [x] **Use the second comparison-PDF picture.** Replace the image in `A conserved code points to common ancestry` (A1.2.10) with the second picture from `ComparingDNAandRNA.pdf`.
 - [x] **Autocorrect every multiple-choice question.** On selecting an option, automatically mark correct or incorrect, identify the correct option after a wrong choice, and provide immediate accessible feedback without a separate reveal-answer button.
+
+- [ ] **Push to GitHub and deploy on Vercel.** Push the current site to `biology-JH/Nucleic-acid` without replacing the Manus-managed source repository; configure Vercel to build the static site to `dist` with its local image assets, and confirm the production deployment is ready.
