@@ -2,7 +2,7 @@ const points = [
   {
     id: "A1.2.1", level: "SL + HL", title: "DNA as the genetic material of all living organisms",
     syllabus: "DNA is the genetic material of all living organisms.",
-    explanation: "DNA stores hereditary information in the cells of living organisms. Some viruses use RNA as their genetic material, but viruses are not considered living organisms.",
+    explanation: "DNA and RNA are the two types of nucleic acid. DNA stores hereditary information in living organisms; some viruses use RNA, but viruses are not usually considered living.",
     image: { wide: true, maxWidth: 1095, src: "/manus-storage/genetic-material-pdf_23aa378a.jpg", fallback: "/public/images/genetic-material-pdf.jpg", alt: "A DNA helix beside a seedling, frog, mushroom, bacterium and virus illustration.", caption: "DNA carries hereditary information in living organisms; viruses are not considered living." },
     questions: [
       { q: "What is DNA’s central role in living organisms?", options: ["It stores hereditary information.", "It supplies every cell with energy.", "It forms the cell membrane.", "It digests proteins."], answer: 0 },
@@ -43,7 +43,7 @@ const points = [
   {
     id: "A1.2.5", level: "SL + HL", title: "RNA: a polymer made by condensation",
     syllabus: "RNA is a polymer formed by condensation of nucleotide monomers.",
-    explanation: "RNA nucleotides join by condensation to form a single polynucleotide strand. Students should recognize a nucleotide and sketch a short RNA polymer.",
+    explanation: "RNA is a single-stranded polymer of ribonucleotides containing ribose. Condensation forms phosphodiester bonds and releases water. Students should recognize a nucleotide and sketch a short RNA polymer.",
     image: { wide: true, maxWidth: 1057, src: "/manus-storage/rna-condensation-pdf_46613777.jpg", fallback: "/public/images/rna-condensation-pdf.jpg", alt: "Ribonucleotides join by condensation to form an RNA strand, with water released and phosphodiester bonds formed.", caption: "Condensation links ribonucleotides into an RNA strand and releases water." },
     questions: [
       { q: "What are the monomers that form an RNA polymer?", options: ["Ribonucleotides.", "Amino acids.", "Fatty acids.", "Monosaccharides only."], answer: 0 },
@@ -73,7 +73,7 @@ const points = [
   {
     id: "A1.2.8", level: "SL + HL", title: "Complementarity copies and expresses information",
     syllabus: "Complementary base pairing allows genetic information to be replicated and expressed.",
-    explanation: "During DNA replication, each strand can guide a complementary new strand. During transcription, DNA base pairing guides RNA assembly. During translation, matching between mRNA codons and tRNA anticodons helps deliver amino acids in sequence.",
+    explanation: "During DNA replication, each strand guides a complementary new strand. During transcription, pairing assembles mRNA from a DNA template; mRNA carries the codon sequence to a ribosome. During translation, each mRNA codon pairs with a tRNA anticodon; that tRNA carries the matching amino acid, linking codon order to polypeptide order.",
     image: { wide: true, maxWidth: 670, src: "/public/images/replication-expression.png", alt: "Base pairing during replication and gene expression", caption: "Base pairing connects stored DNA information to new nucleic-acid strands." },
     questions: [
       { q: "How does complementary pairing help copy DNA?", options: ["Each original strand guides a matching new strand.", "It changes DNA into protein directly.", "It removes all bases from the template.", "It prevents new nucleotides from joining."], answer: 0 },
@@ -102,8 +102,8 @@ const points = [
   },
   {
     id: "A1.2.11", level: "HL", title: "Directionality of DNA and RNA",
-    syllabus: "DNA and RNA have 5′→3′ linkages and directionality that matters in replication, transcription and translation.",
-    explanation: "A strand has a 5′ end and a 3′ end, giving it direction. Nucleic acids are synthesized 5′→3′ as new nucleotides join at the 3′ end. This affects how DNA is replicated, how RNA is transcribed and how mRNA is read in translation.",
+    syllabus: "The 5′ and 3′ ends of DNA and RNA differ, giving each strand directionality.",
+    explanation: "A strand’s 3′ end has a free –OH; its 5′ end carries a phosphate attached at C5. An incoming nucleotide’s 5′ phosphate forms a phosphodiester bond with the growing strand’s 3′ –OH, so synthesis proceeds 5′→3′. DNA strands are antiparallel, with opposite 5′/3′ orientations.",
     image: { wide: true, maxWidth: 670, src: "/public/images/directionality.png", alt: "Two nucleic-acid strands with opposite 5′ and 3′ orientations", caption: "The 5′ and 3′ ends define each strand’s orientation." },
     questions: [
       { q: "In which direction is a new DNA or RNA strand synthesized?", options: ["3′→5′ by addition at the 5′ end.", "5′→3′ by addition at the 3′ end.", "In both directions equally from every end.", "Direction has no relation to strand growth."], answer: 1 },
@@ -124,7 +124,7 @@ const points = [
   {
     id: "A1.2.13", level: "HL", title: "Packaging DNA into nucleosomes",
     syllabus: "A nucleosome is DNA wrapped around a core of eight histone proteins, held together by an additional histone attached to linker DNA.",
-    explanation: "DNA wraps around a histone octamer to form a nucleosome. Linker DNA connects neighboring nucleosomes; an additional histone protein associates with the linker. Use molecular visualization software to study how DNA associates with the proteins.",
+    explanation: "In eukaryotes, nucleosomes package DNA into condensed chromosomes and help regulate replication and transcription. DNA wraps around a histone octamer; linker DNA joins adjacent nucleosomes and H1 associates with the linker. Use molecular visualization software to study DNA–protein association.",
     image: { wide: true, maxWidth: 610, src: "/public/images/nucleosome.png", alt: "DNA wrapped around a histone protein core", caption: "A nucleosome: DNA wrapped around a core of eight histones." },
     questions: [
       { q: "What is the core of a nucleosome?", options: ["DNA wrapped around eight histone proteins.", "RNA wrapped around a ribosome.", "A chain of eight nucleotides only.", "A phospholipid bilayer."], answer: 0 },
@@ -145,7 +145,7 @@ const points = [
   {
     id: "A1.2.15", level: "HL", title: "Chargaff’s data: diversity and falsification",
     syllabus: "Chargaff’s data describe relative amounts of purine and pyrimidine bases across diverse life forms.",
-    explanation: "Chargaff found that DNA base composition varies among organisms while, in double-stranded DNA, A is approximately equal to T and G to C. The data challenged the tetranucleotide idea that DNA repeated all four bases equally. This is an example of evidence falsifying a scientific hypothesis.",
+    explanation: "Chargaff found that base proportions are similar across tissues within a species but vary between species. In double-stranded DNA, A≈T and G≈C, so purines (A+G) and pyrimidines (C+T) each total about 50%. These results refuted the tetranucleotide hypothesis that all four bases repeat equally. Evidence can falsify a hypothesis, while repeated support cannot prove it against every future test.",
     image: { wide: true, maxWidth: 670, src: "/public/images/chargaff-data.png", alt: "Chart comparing DNA base composition across different organisms", caption: "Organisms vary in DNA base composition; paired bases show consistent relationships." },
     questions: [
       { q: "In double-stranded DNA, which relationship did Chargaff’s findings support?", options: ["A ≈ T and G ≈ C.", "A ≈ G and T ≈ C.", "All four bases are always equal.", "A is absent whenever G is present."], answer: 0 },
