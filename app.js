@@ -64,7 +64,7 @@ const points = [
     id: "A1.2.7", level: "SL + HL", title: "DNA and RNA compared",
     syllabus: "Compare DNA and RNA by strand number, nitrogenous bases and pentose sugar.",
     explanation: "DNA is usually double-stranded, contains deoxyribose and uses A, T, C and G. RNA is usually single-stranded, contains ribose and uses A, U, C and G. Be able to sketch the difference between ribose and deoxyribose. Examples of RNA include mRNA, tRNA and rRNA.",
-    image: { wide: true, maxWidth: 1088, src: "/manus-storage/dna-rna-comparison-v2_6feffe70.jpg", fallback: "/public/images/dna-rna-comparison-v2.jpg", alt: "The first picture from the comparison PDF: DNA shown as a double helix with A, T, C and G, beside a single RNA strand with U.", caption: "DNA is double-stranded and uses T; RNA is single-stranded and uses U." },
+    image: { wide: true, maxWidth: 1088, src: "/manus-storage/dna-rna-comparison-v2_6feffe70.jpg", fallback: "/public/images/dna-rna-comparison-v2.jpg", alt: "DNA shown as a double helix with A, T, C and G beside a single RNA strand with U.", caption: "DNA is double-stranded and uses T; RNA is single-stranded and uses U." },
     questions: [
       { q: "Which comparison of DNA and RNA is correct?", options: ["DNA has ribose and U; RNA has deoxyribose and T.", "DNA usually has two strands and T; RNA usually has one strand and U.", "Both always have two strands and T.", "Both use U and contain identical sugars."], answer: 1 },
       { q: "What differs at the 2′ carbon of ribose and deoxyribose?", options: ["Ribose has –OH; deoxyribose has –H.", "Ribose has –H; deoxyribose has –OH.", "Both have an extra phosphate there.", "Neither sugar has a 2′ carbon."], answer: 0 }
@@ -93,8 +93,8 @@ const points = [
   {
     id: "A1.2.10", level: "SL + HL", title: "A conserved code points to common ancestry",
     syllabus: "Conservation of the genetic code across life forms is evidence of universal common ancestry.",
-    explanation: "Across living groups, the same codons usually specify the same amino acids. This strong conservation is evidence that life inherited the genetic code from common ancestors; the guide does not require memorizing specific examples.",
-    image: { wide: true, maxWidth: 1024, src: "/manus-storage/common-ancestry-v2_326ee84a.jpg", fallback: "/public/images/common-ancestry-v2.jpg", alt: "The second picture from the comparison PDF: bacteria, a plant and an animal share the same genetic code and trace back to a common ancestor.", caption: "Bacteria, plants and animals share a conserved genetic code, supporting common ancestry." },
+    explanation: "Across living groups, the same codons usually specify the same amino acids. This strong conservation is evidence that life inherited the genetic code from common ancestors; specific examples need not be memorized.",
+    image: { wide: true, maxWidth: 1024, src: "/manus-storage/common-ancestry-v2_326ee84a.jpg", fallback: "/public/images/common-ancestry-v2.jpg", alt: "Bacteria, a plant and an animal share the same genetic code and trace back to a common ancestor.", caption: "Bacteria, plants and animals share a conserved genetic code, supporting common ancestry." },
     questions: [
       { q: "What does it mean that the genetic code is conserved?", options: ["The same codons usually correspond to the same amino acids across many organisms.", "Every organism has the same DNA sequence.", "Only one codon is used in all cells.", "Codons differ completely between every species."], answer: 0 },
       { q: "Why does a highly conserved genetic code support common ancestry?", options: ["It is consistent with inheritance from shared ancestors.", "It proves that all organisms are identical.", "It shows that DNA contains no information.", "It means the code evolved separately in every cell."], answer: 0 }
