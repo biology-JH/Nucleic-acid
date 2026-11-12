@@ -54,7 +54,7 @@ const points = [
     id: "A1.2.6", level: "SL + HL", title: "DNA: two complementary strands",
     syllabus: "DNA is a double helix of two antiparallel nucleotide strands linked by hydrogen bonds between complementary base pairs.",
     explanation: "The strands run in opposite directions. Adenine pairs with thymine, and guanine pairs with cytosine; hydrogen bonds connect the bases. In diagrams, show the strands antiparallel. Drawing the helix itself is not required.",
-    image: { wide: true, maxWidth: 670, src: "/public/images/antiparallel-dna.png", alt: "Paired DNA strands and complementary base-pair geometry", caption: "Complementary bases hold the two antiparallel strands together." },
+    image: { wide: true, maxWidth: 1046, src: "/manus-storage/a1-2-6-double-helix_db4e9c53.png", fallback: "/public/images/a1-2-6-double-helix.png", alt: "A labeled DNA segment with two antiparallel strands, a sugar–phosphate backbone, and complementary A–T and G–C pairs.", caption: "A–T pairs form two hydrogen bonds; G–C pairs form three." },
     questions: [
       { q: "Which base pairing is correct in DNA?", options: ["A–G and C–T.", "A–T and G–C.", "A–C and T–G.", "A–U and G–C."], answer: 1 },
       { q: "What does antiparallel mean for DNA strands?", options: ["Both run 5′→3′ in the same direction.", "They run in opposite directions.", "They contain no bases.", "They are joined by peptide bonds."], answer: 1 }
